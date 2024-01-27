@@ -92,12 +92,13 @@ class IframeView {
 
 		// sandbox
 		this.iframe.sandbox = "allow-same-origin";
-		if (this.settings.allowScriptedContent) {
-			this.iframe.sandbox += " allow-scripts";
-		}
-		if (this.settings.allowPopups) {
-			this.iframe.sandbox += " allow-popups";
-		}
+		this.iframe.sandbox += " allow-scripts";
+		//if (this.settings.allowScriptedContent) {
+		//	this.iframe.sandbox += " allow-scripts";
+		//}
+		//if (this.settings.allowPopups) {
+		//	this.iframe.sandbox += " allow-popups";
+		//}
 		
 		this.iframe.setAttribute("enable-annotation", "true");
 
